@@ -1,0 +1,15 @@
+@import "tailwindcss";
+h1 { 
+    @apply text-3xl font-bold mb-4 mt-8;
+    color: #313946;
+}
+h2 { 
+    @apply text-2xl font-semibold mb-4 mt-8; 
+    color: #313946;
+}
+p { @apply mb-4; color: #A8A3AE;}
+ul { @apply list-disc list-inside mb-4; }
+ol { @apply list-decimal list-inside mb-4; color: #A8A3AE;}
+li { @apply mb-2; color: #A8A3AE;}
+strong { color: #77787A; }
+a { @apply text-orange-600 hover:text-orange-800; color: #F3F4F2;}

@@ -1,0 +1,51 @@
+---
+import { navItems } from '../content/data/db';
+import { Image } from 'astro:assets';
+import personal from '../assets/personal.jpg';
+import '../styles/sidebar.css';
+---
+
+<aside class="w-64 min-h-screen p-6 shadow-xl flex flex-col" style="background-color: #F3F4F2;">
+  <div class="flex flex-col items-center space-x-2 mb-6">
+    <Image
+      src={personal}
+      alt="Personal"
+      width={150}
+      height={150}
+      class="rounded-full border-1"
+      style={{ borderColor: '#313946' }}
+    />
+    <h1 class="text-xl font-bold text-center" style="color: #313946">Gerald Emmanuel Figueroa</h1>
+  </div>
+  <nav class="sidebar-nav">
+    <ul class="space-y-4">
+      {
+        navItems.map((item) => (
+          <li class="menu-item">
+            <a
+              href={item.href}
+              class="block py-2 px-3 rounded-lg hover:bg-orange-700/40 transition-colors font-medium"
+            >
+              <span data-lang="es">{item.title}</span>
+            </a>
+            {item.subitems && (
+              <ul class="mt-2 ml-4 space-y-2 border-l-2 pl-4" style="border-color: #7D7383;">
+                {item.subitems.map((subitem) => (
+                  <li>
+                    <a
+                      href={subitem.href}
+                      class="block py-1 px-3 rounded-lg text-sm transition-colors"
+                    >
+                      <span data-lang="es">{subitem.title}</span>
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </li>
+        ))
+      }
+    </ul>
+  </nav>
+</aside>
+

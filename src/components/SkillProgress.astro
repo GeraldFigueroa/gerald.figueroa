@@ -1,0 +1,11 @@
+---
+const {name, level} = Astro.props;
+---
+
+<div class="w-full">
+    <div class="text-sm font-semibold mb-1">{name}</div>
+    <div class="w-full rounded-full h-3" style="background-color: #313946;">
+      <div class="h-3 rounded-full" style={`width: ${level}%; background-color: #A8A3AE`}></div>
+    </div>
+    </div>
+</div>

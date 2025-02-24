@@ -1,0 +1,27 @@
+---
+import SkillProgress from './SkillProgress.astro';
+
+import { stacks } from '../content/data/db';
+---
+
+
+<section class="">
+  <h1 class="text-3xl font-bold text-white p-6" style="background-color: #313946;">
+    Habilidades
+  </h1>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6">
+    {Object.entries(stacks).map(([title, skills]) => (
+      <div class="text-white p-4 rounded-xl shadow-lg" style="background-color: #77787A;">
+        <h2 class="text-xl font-bold mb-4">{title}</h2>
+        <div class="space-y-3">
+          {skills.map((skill) => (
+            <SkillProgress
+              name={skill.name} 
+              level={skill.level} 
+            />
+          ))}
+        </div>
+      </div>
+    ))}
+  </div>
+</section>

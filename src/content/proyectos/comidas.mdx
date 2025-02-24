@@ -1,0 +1,25 @@
+---
+title: "Comidas"
+description: "Gestión de pedidos y pagos en venta de productos."
+
+icon: "🍽️"
+---
+
+## Descripción
+
+Permite a los usuarios crear y gestionar eventos de **venta de productos**. Cada evento representa una ocasión específica en la que se venderá un productos. Dentro de cada evento, el usuario puede **registrar y gestionar pedidos**, asignando **estados de entrega y pago** para un mejor control.
+
+El sistema también ofrece una sección de **resumen** donde se presentan métricas clave, como el total de ventas, ingresos, número de pedidos entregados y pendientes, así como el estado de los pagos. Además, permite gestionar los gastos realizados en cada evento, lo que facilita el cálculo del beneficio obtenido.
+
+## Funcionamiento
+1. **Creación de Eventos**: El usuario puede crear eventos de venta, asignándoles un nombre, descripción y una fecha específica.
+2. **Gestión de Pedidos**: Dentro de cada evento, se pueden agregar pedidos, indicando el producto, estado inicial y cliente.
+3. **Estados de los Pedidos**: Cambiar de estado a los pedidos, ya sea los que fueron **entregados** y/o fueron **pagados**.
+4. **Gestión de Gastos**: Se pueden registrar los gastos asociados al evento, como compra de insumos, alquiler de equipos o cualquier otro costo relacionado.
+5. **Resumen del Evento**: Una sección de análisis que muestra información como el total de ventas, cantidad de pedidos entregados y pendientes, cantidad de pedidos pagados y pendientes de pago, total de gastos y cálculo del beneficio neto.
+
+## Tecnologías
+- **Django**: Framework backend utilizado para la gestión de la lógica de negocio y la base de datos.
+- **PostgreSQL**: Base de datos relacional utilizada para almacenar todos los datos del proyecto
+- **HTML, CSS y JavaScript**: Tecnologías Frontend para la visualización e interacción del usuario.
+- **Bootstrap**: Framework de diseño para mejorar la interfaz de usuario

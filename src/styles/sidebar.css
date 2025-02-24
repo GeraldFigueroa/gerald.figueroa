@@ -1,0 +1,23 @@
+.sidebar-nav,
+.sidebar-nav ul {
+  list-style-type: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.sidebar-nav li::before,
+.sidebar-nav li::marker {
+  display: none !important;
+  content: none !important;
+}
+
+/* Asegurar que todos los enlaces sean blancos */
+.sidebar-nav a {
+  color: #313946 !important;
+  text-decoration: none !important;
+}
+
+/* Hover effects */
+.sidebar-nav a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}

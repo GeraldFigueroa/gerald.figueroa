@@ -1,0 +1,25 @@
+---
+title: "Web Scraping"
+description: "Extrae, transforma y almacena datos de la web."
+
+icon: "🌐"
+---
+
+## Descripción
+
+Este proyecto consiste en el desarrollo de un script en **Python** que emplea técnicas de web scraping para extraer información relevante de sitios web (Supermercados) de manera automatizada. 
+
+Posteriormente, los datos se procesan, transforman y almacenan en una base de datos **MySQL**, lo que permite su estructuración y análisis eficiente.
+
+
+## Funcionamiento
+1. **Extracción de Datos**: El script realiza peticiones HTTP a la página web objetivo y obtiene el contenido en formato HTML. Este se encarga de obtener información de las categorías (y subcategorías) de los productos e iterar sobre las mismas para obtener la mayor cantidad de información posible.
+2. **Procesamiento y Transformación**: Una vez obtenida la información, esta se transformaba y se extraía solo el contenido relevante. Luego se estructura la información en un formato adecuado para su almacenamiento.
+3. **Almacenamiento en Base de Datos**: Finalmente, los datos transformados se almacenan en una base de datos relacional, siendo en este caso MySQL.
+
+## Tecnologías
+- **Python**: Lenguaje de programación utilizado para el desarrollo del script debido a su flexibilidad, facilidad y disponibilidad de librerías para realizar los procesos necesarios para este proyecto.
+- **Requests**: Biblioteca utilizada para realizar solicitudes HTTP y obtención del contenido de las páginas web de manera eficiente.
+- **BeautifulSoup**: Herramienta fundamental para extraer, filtrar y estructurar la información obtenida a partir del HTML.
+- **JSON**: Formato utilizado para la estructuración y transporte de los datos extraídos antes de almacenarlos en la base de datos.
+- **MySQL**: Sistema de gestión de bases de datos donde se almacenan los datos de forma organizada para su posterior consulta.
